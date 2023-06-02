@@ -26,4 +26,4 @@ jobs:
           teardown: 'true'
           build: |
             npm install
-            npm build
+            npm run build
