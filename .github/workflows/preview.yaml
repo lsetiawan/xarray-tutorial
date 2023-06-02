@@ -17,6 +17,10 @@ jobs:
 
       - uses: ./.github/actions/setupconda
 
+      - name: Print jb
+        shell: bash -l {0}
+        run: which jupyter-book
+
       - name: Publish to Surge
         uses: afc163/surge-preview@v1
         with:
