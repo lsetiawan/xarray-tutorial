@@ -17,9 +17,16 @@ jobs:
 
       - uses: ./.github/actions/setupconda
 
-      - name: Print jb
+      - name: Build JupyterBook
+        # NOTE: login shell activates conda environment
         shell: bash -l {0}
-        run: which jupyter-book
+        run: |
+          jupyter-book build ./ --warningiserror --keep-going
+
+      - name: Dump Build Logs
+        if: always()
+        run: |
+          if (test -a _build/html/reports/*log); then cat _build/html/reports/*log ; fi
 
       - name: Publish to Surge
         uses: afc163/surge-preview@v1
@@ -31,3 +38,6 @@ jobs:
           build: |
             npm install
             npm run build
+      
+      - name: Get the preview_url
+        run: echo "url => ${{ steps.preview_step.outputs.preview_url }}"

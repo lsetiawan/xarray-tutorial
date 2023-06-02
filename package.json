@@ -3,6 +3,6 @@
     "surge": "^0.23.1"
   },
   "scripts": {
-    "build": "/usr/share/miniconda3/envs/xarray-tutorial/bin/jupyter-book build ./ --warningiserror --keep-going"
+    "build": "ls -lah _build/html"
   }
 }
