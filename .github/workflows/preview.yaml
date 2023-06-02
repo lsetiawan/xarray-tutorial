@@ -29,6 +29,7 @@ jobs:
           if (test -a _build/html/reports/*log); then cat _build/html/reports/*log ; fi
 
       - name: Publish to Surge
+        id: preview_step
         uses: afc163/surge-preview@v1
         with:
           surge_token: ${{ secrets.SURGE_TOKEN }}
