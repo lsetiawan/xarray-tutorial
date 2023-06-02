@@ -25,5 +25,5 @@ jobs:
           dist: _build/html
           teardown: 'true'
           build: |
-            jupyter-book build ./ --warningiserror --keep-going
-            if (test -a _build/html/reports/*log); then cat _build/html/reports/*log ; fi
+            npm install
+            npm build
