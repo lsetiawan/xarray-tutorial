@@ -17,21 +17,14 @@ jobs:
 
       - uses: ./.github/actions/setupconda
 
-      - name: Build JupyterBook
-        # NOTE: login shell activates conda environment
-        shell: bash -l {0}
-        run: |
-          jupyter-book build ./ --warningiserror --keep-going
-
-      - name: Dump Build Logs
-        if: always()
-        run: |
-          if (test -a _build/html/reports/*log); then cat _build/html/reports/*log ; fi
-
       - name: Publish to Surge
         uses: afc163/surge-preview@v1
+        shell: bash -l {0}
         with:
           surge_token: ${{ secrets.SURGE_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           dist: _build/html
           teardown: 'true'
+          build: |
+            jupyter-book build ./ --warningiserror --keep-going
+            if (test -a _build/html/reports/*log); then cat _build/html/reports/*log ; fi
