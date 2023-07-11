@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/announcement.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
@@ -74,7 +75,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Binary data with lazy loading" href="2.Backend_with_Lazy_Loading.html" />
     <link rel="prev" title="Creating new backends" href="backends.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -116,6 +117,12 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">ℹ️ SciPy Tutorial Attendees. <a href="https://tutorial.xarray.dev/workshops/scipy2023/README.html">Click here </a>.</div>
+  </div>
+
   
     <nav class="bd-header navbar navbar-expand-lg bd-navbar">
     </nav>
@@ -159,22 +166,25 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../overview/get-started.html">Get Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../overview/xarray-in-45-min.html">Xarray in 45 minutes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../overview/fundamental-path/README.html">Fundamental Learning Path</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../overview/learning-paths.html">Learning Paths</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../overview/fundamental-path/README.html">Fundamentals Learning Path</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fundamentals</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../fundamentals/01_data_structures.html">Data Structures</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../fundamentals/01_data_structures.html">Data Structures</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../fundamentals/01_datastructures.html">Xarray’s Data structures</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fundamentals/01.1_creating_data_structures.html">Creating Data Structures</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fundamentals/01.1_io.html">Reading and writing files</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../fundamentals/02_labeled_data.html">Labeled data</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../fundamentals/02.1_working_with_labeled_data.html">Working with labeled data</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../fundamentals/02_labeled_data.html">Labeled data</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../fundamentals/02.1_indexing_Basic.html">Indexing and Selecting Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fundamentals/02.2_manipulating_dimensions.html">Manipulating Dimensions (Data Resolution)</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../fundamentals/03_computation.html">Computation</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../fundamentals/03_computation.html">Computation</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../fundamentals/03.1_computation_with_xarray.html">Basic Computation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fundamentals/02.3_aligning_data_objects.html">Computing with Multiple Objects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fundamentals/03.2_groupby_with_xarray.html">Grouped Computations</a></li>
@@ -182,7 +192,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../fundamentals/03.4_weighted.html">Weighted Reductions</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../fundamentals/04.0_plotting.html">Plotting and Visualization</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../fundamentals/04.0_plotting.html">Plotting and Visualization</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../fundamentals/04.1_basic_plotting.html">Basic Visualization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fundamentals/04.2_faceting.html">Faceting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fundamentals/04.3_geographic_plotting.html">Geography with Cartopy</a></li>
@@ -191,61 +201,68 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Intermediate</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../intermediate/01-high-level-computation-patterns.html">High-level computational patterns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/01-high-level-computation-patterns.html">Computational Patterns</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../intermediate/indexing/indexing.html">Indexing</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../intermediate/indexing/advanced-indexing.html">Advanced Indexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../intermediate/indexing/boolean-masking-indexing.html">Boolean Indexing &amp; Masking</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../intermediate/xarray_and_dask.html">Parallel computing with Dask</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../intermediate/xarray_ecosystem.html">A Tour of the Xarray Ecosystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/xarray_ecosystem.html">A Tour of Xarray Customizations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intermediate/hvplot.html">Interactive plots using hvplot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intermediate/cmip6-cloud.html">Accessing remote data stored on the cloud</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../data_cleaning/ice_velocity.html">Re-organize InSAR ice velocity data</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../data_cleaning/data_cleaning.html">Data Tidying</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../data_cleaning/ice_velocity.html">Re-organize InSAR ice velocity data</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../parallel-intro.html">Parallelizing custom functions</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../apply_ufunc/apply_ufunc.html">apply_ufunc</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../apply_ufunc/apply_ufunc.html">apply_ufunc</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../apply_ufunc/simple_numpy_apply_ufunc.html">A gentle introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../apply_ufunc/simple_dask_apply_ufunc.html">Handling dask arrays</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../apply_ufunc/vectorize_1d.html">Applying unvectorized functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../apply_ufunc/core-dimensions.html">Core dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../apply_ufunc/complex-output-numpy.html">Handling complex output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../apply_ufunc/automatic-vectorizing-numpy.html">Automatic Vectorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../apply_ufunc/dask_apply_ufunc.html">Handling dask arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../apply_ufunc/numba-vectorization.html">Fast vectorization with Numba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../apply_ufunc/example-interp.html">np.interp : An end-to-end example</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../map_blocks/map_blocks.html">map_blocks</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../map_blocks/map_blocks.html">map_blocks</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../map_blocks/simple_map_blocks.html">A gentle introduction</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="backends.html">Creating new backends</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="backends.html">Creating new backends</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Binary data without lazy loading</a></li>
 <li class="toctree-l2"><a class="reference internal" href="2.Backend_with_Lazy_Loading.html">Binary data with lazy loading</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../accessors/01_accessor_examples.html">Creating custom accessors</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Workshops</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../workshops/scipy2023/README.html">SciPy 2023</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../workshops/oceanhackweek2020/README.html">Oceanhackweek 2020</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../workshops/oceanhackweek2020/README.html">Oceanhackweek 2020</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference external" href="https://tutorial.xarray.dev/overview/xarray-in-45-min">Xarray in 45 minutes</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../workshops/thinking-like-xarray/README.html">Thinking like Xarray</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../workshops/thinking-like-xarray/README.html">Thinking like Xarray</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference external" href="https://tutorial.xarray.dev/intermediate/01-high-level-computation-patterns">High-level computation patterns</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../workshops/online-tutorial-series/README.html">Xarray Online Tutorial</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../workshops/online-tutorial-series/README.html">Xarray Online Tutorial</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../workshops/online-tutorial-series/01_xarray_fundamentals.html">Xarray Fundamentals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../workshops/online-tutorial-series/02_indexing.html">Indexing and Selecting Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../workshops/online-tutorial-series/03_computation.html">Computation</a></li>
 </ul>
 </li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Domain Specific</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference external" href="https://anopheles-genomic-surveillance.github.io/workshop-5/module-1-xarray.html">Genomics</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://predictablynoisy.com/posts/2019/2019-10-22-xarray-neuro/">Electrophysiology</a></li>
-</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Reference</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../CONTRIBUTING.html">Contributing Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../reference/resources.html">Keep Exploring!</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../reference/glossary.html">Glossary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../reference/bibliography.html">Bibliography</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../reference/acknowledgements.html">Acknowledgements</a></li>
 </ul>
 
     </div>
@@ -971,12 +988,12 @@ dl.xr-attrs {
 </style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;foo&#x27; (x: 30000000)&gt;
 [30000000 values with dtype=int64]
 Coordinates:
-  * x        (x) int64 0 10 20 30 40 ... 299999960 299999970 299999980 299999990</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'foo'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>x</span>: 30000000</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-2e5dcc8a-a5a0-4683-a511-ff2fc130786d' class='xr-array-in' type='checkbox' checked><label for='section-2e5dcc8a-a5a0-4683-a511-ff2fc130786d' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>...</span></div><div class='xr-array-data'><pre>[30000000 values with dtype=int64]</pre></div></div></li><li class='xr-section-item'><input id='section-28a39dc8-e3ad-4550-9a62-f8a3cd43bc4c' class='xr-section-summary-in' type='checkbox'  checked><label for='section-28a39dc8-e3ad-4550-9a62-f8a3cd43bc4c' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>x</span></div><div class='xr-var-dims'>(x)</div><div class='xr-var-dtype'>int64</div><div class='xr-var-preview xr-preview'>0 10 20 ... 299999980 299999990</div><input id='attrs-e160a489-d24d-478e-8a4b-31d117fd1067' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-e160a489-d24d-478e-8a4b-31d117fd1067' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b0f09227-5fed-46a4-a38e-868415508b06' class='xr-var-data-in' type='checkbox'><label for='data-b0f09227-5fed-46a4-a38e-868415508b06' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([        0,        10,        20, ..., 299999970, 299999980, 299999990])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-9d0271e6-596c-4189-a5f1-e6c6922cd4f7' class='xr-section-summary-in' type='checkbox'  ><label for='section-9d0271e6-596c-4189-a5f1-e6c6922cd4f7' class='xr-section-summary' >Indexes: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-index-name'><div>x</div></div><div class='xr-index-preview'>PandasIndex</div><div></div><input id='index-66e14359-067e-4eb0-87cd-49565949b377' class='xr-index-data-in' type='checkbox'/><label for='index-66e14359-067e-4eb0-87cd-49565949b377' title='Show/Hide index repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-index-data'><pre>PandasIndex(Index([        0,        10,        20,        30,        40,        50,
+  * x        (x) int64 0 10 20 30 40 ... 299999960 299999970 299999980 299999990</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'foo'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>x</span>: 30000000</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-c0b21c6c-993f-4064-866a-d112541f5339' class='xr-array-in' type='checkbox' checked><label for='section-c0b21c6c-993f-4064-866a-d112541f5339' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>...</span></div><div class='xr-array-data'><pre>[30000000 values with dtype=int64]</pre></div></div></li><li class='xr-section-item'><input id='section-587d7013-fd2d-4349-9781-0aebddaaddad' class='xr-section-summary-in' type='checkbox'  checked><label for='section-587d7013-fd2d-4349-9781-0aebddaaddad' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>x</span></div><div class='xr-var-dims'>(x)</div><div class='xr-var-dtype'>int64</div><div class='xr-var-preview xr-preview'>0 10 20 ... 299999980 299999990</div><input id='attrs-49675190-95ed-41b0-8d96-e533dd0350f3' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-49675190-95ed-41b0-8d96-e533dd0350f3' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-d1bc3ec8-6d42-421c-8fe3-d3563ae0124d' class='xr-var-data-in' type='checkbox'><label for='data-d1bc3ec8-6d42-421c-8fe3-d3563ae0124d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([        0,        10,        20, ..., 299999970, 299999980, 299999990])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-f1fc44e7-298e-4b0b-b8c5-557048cab33d' class='xr-section-summary-in' type='checkbox'  ><label for='section-f1fc44e7-298e-4b0b-b8c5-557048cab33d' class='xr-section-summary' >Indexes: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-index-name'><div>x</div></div><div class='xr-index-preview'>PandasIndex</div><div></div><input id='index-15c1b5f2-2d26-4683-85a5-f00b780030e4' class='xr-index-data-in' type='checkbox'/><label for='index-15c1b5f2-2d26-4683-85a5-f00b780030e4' title='Show/Hide index repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-index-data'><pre>PandasIndex(Index([        0,        10,        20,        30,        40,        50,
               60,        70,        80,        90,
        ...
        299999900, 299999910, 299999920, 299999930, 299999940, 299999950,
        299999960, 299999970, 299999980, 299999990],
-      dtype=&#x27;int64&#x27;, name=&#x27;x&#x27;, length=30000000))</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-b138af6e-f03f-4516-8545-c975e3b494cf' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-b138af6e-f03f-4516-8545-c975e3b494cf' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
+      dtype=&#x27;int64&#x27;, name=&#x27;x&#x27;, length=30000000))</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-e485b466-f042-448a-a0bc-b04bb0a8614a' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-e485b466-f042-448a-a0bc-b04bb0a8614a' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1352,12 +1369,12 @@ dl.xr-attrs {
 </style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;foo&#x27; (x: 30000000)&gt;
 [30000000 values with dtype=float64]
 Coordinates:
-  * x        (x) int64 0 10 20 30 40 ... 299999960 299999970 299999980 299999990</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'foo'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>x</span>: 30000000</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-76539ef5-eaec-469f-9a68-ec35bc3cbaa0' class='xr-array-in' type='checkbox' checked><label for='section-76539ef5-eaec-469f-9a68-ec35bc3cbaa0' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>...</span></div><div class='xr-array-data'><pre>[30000000 values with dtype=float64]</pre></div></div></li><li class='xr-section-item'><input id='section-edc609cb-9c20-4b6d-b687-95d06bb5e561' class='xr-section-summary-in' type='checkbox'  checked><label for='section-edc609cb-9c20-4b6d-b687-95d06bb5e561' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>x</span></div><div class='xr-var-dims'>(x)</div><div class='xr-var-dtype'>int64</div><div class='xr-var-preview xr-preview'>0 10 20 ... 299999980 299999990</div><input id='attrs-b60d3b52-0d18-4547-b5f5-b3ee0c3f9df2' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-b60d3b52-0d18-4547-b5f5-b3ee0c3f9df2' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b78fd55a-1189-4dad-9c19-570cf67d6b97' class='xr-var-data-in' type='checkbox'><label for='data-b78fd55a-1189-4dad-9c19-570cf67d6b97' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([        0,        10,        20, ..., 299999970, 299999980, 299999990])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-cfc286bf-0ce8-4adf-90ce-cf9f02f66b10' class='xr-section-summary-in' type='checkbox'  ><label for='section-cfc286bf-0ce8-4adf-90ce-cf9f02f66b10' class='xr-section-summary' >Indexes: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-index-name'><div>x</div></div><div class='xr-index-preview'>PandasIndex</div><div></div><input id='index-1f39b437-d595-4a01-9aeb-c91f2a2b21b8' class='xr-index-data-in' type='checkbox'/><label for='index-1f39b437-d595-4a01-9aeb-c91f2a2b21b8' title='Show/Hide index repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-index-data'><pre>PandasIndex(Index([        0,        10,        20,        30,        40,        50,
+  * x        (x) int64 0 10 20 30 40 ... 299999960 299999970 299999980 299999990</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'foo'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>x</span>: 30000000</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-7ad1c4b4-2ae5-45f2-bf48-0bda208348a3' class='xr-array-in' type='checkbox' checked><label for='section-7ad1c4b4-2ae5-45f2-bf48-0bda208348a3' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>...</span></div><div class='xr-array-data'><pre>[30000000 values with dtype=float64]</pre></div></div></li><li class='xr-section-item'><input id='section-66bada9a-0d89-4d69-bc62-e97c6ce3896a' class='xr-section-summary-in' type='checkbox'  checked><label for='section-66bada9a-0d89-4d69-bc62-e97c6ce3896a' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>x</span></div><div class='xr-var-dims'>(x)</div><div class='xr-var-dtype'>int64</div><div class='xr-var-preview xr-preview'>0 10 20 ... 299999980 299999990</div><input id='attrs-6f8ae7e2-ff53-49de-a522-3f182e09d690' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-6f8ae7e2-ff53-49de-a522-3f182e09d690' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-7357e36f-3a81-4a53-8d47-3780babcb103' class='xr-var-data-in' type='checkbox'><label for='data-7357e36f-3a81-4a53-8d47-3780babcb103' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([        0,        10,        20, ..., 299999970, 299999980, 299999990])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-91f315c3-c3cb-4680-8c9f-8905e2bd7a41' class='xr-section-summary-in' type='checkbox'  ><label for='section-91f315c3-c3cb-4680-8c9f-8905e2bd7a41' class='xr-section-summary' >Indexes: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-index-name'><div>x</div></div><div class='xr-index-preview'>PandasIndex</div><div></div><input id='index-549abc92-4f78-419d-bdce-ecb29eb9b700' class='xr-index-data-in' type='checkbox'/><label for='index-549abc92-4f78-419d-bdce-ecb29eb9b700' title='Show/Hide index repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-index-data'><pre>PandasIndex(Index([        0,        10,        20,        30,        40,        50,
               60,        70,        80,        90,
        ...
        299999900, 299999910, 299999920, 299999930, 299999940, 299999950,
        299999960, 299999970, 299999980, 299999990],
-      dtype=&#x27;int64&#x27;, name=&#x27;x&#x27;, length=30000000))</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-82a28531-2874-417c-800b-414636a12513' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-82a28531-2874-417c-800b-414636a12513' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
+      dtype=&#x27;int64&#x27;, name=&#x27;x&#x27;, length=30000000))</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-d5782809-21bc-47cc-8bbd-ef5373b9f025' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-d5782809-21bc-47cc-8bbd-ef5373b9f025' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1732,7 +1749,7 @@ dl.xr-attrs {
 </style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;foo&#x27; (x: 11)&gt;
 [11 values with dtype=float64]
 Coordinates:
-  * x        (x) int64 0 10 20 30 40 50 60 70 80 90 100</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'foo'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>x</span>: 11</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-66e125f3-48d6-406b-9213-927498b94605' class='xr-array-in' type='checkbox' checked><label for='section-66e125f3-48d6-406b-9213-927498b94605' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>...</span></div><div class='xr-array-data'><pre>[11 values with dtype=float64]</pre></div></div></li><li class='xr-section-item'><input id='section-962804f4-d9ab-4c44-971e-302d8bc837d7' class='xr-section-summary-in' type='checkbox'  checked><label for='section-962804f4-d9ab-4c44-971e-302d8bc837d7' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>x</span></div><div class='xr-var-dims'>(x)</div><div class='xr-var-dtype'>int64</div><div class='xr-var-preview xr-preview'>0 10 20 30 40 50 60 70 80 90 100</div><input id='attrs-e5d04d64-ec5f-492b-a7db-ae6279a8ae79' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-e5d04d64-ec5f-492b-a7db-ae6279a8ae79' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-9a82bbb1-385d-4913-a2c3-10eb8796767b' class='xr-var-data-in' type='checkbox'><label for='data-9a82bbb1-385d-4913-a2c3-10eb8796767b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([  0,  10,  20,  30,  40,  50,  60,  70,  80,  90, 100])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-6c2c1fd6-e50d-4bf9-a983-a6ea45f79b4f' class='xr-section-summary-in' type='checkbox'  ><label for='section-6c2c1fd6-e50d-4bf9-a983-a6ea45f79b4f' class='xr-section-summary' >Indexes: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-index-name'><div>x</div></div><div class='xr-index-preview'>PandasIndex</div><div></div><input id='index-08766bbf-523b-4a9a-9060-8d51984434d5' class='xr-index-data-in' type='checkbox'/><label for='index-08766bbf-523b-4a9a-9060-8d51984434d5' title='Show/Hide index repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-index-data'><pre>PandasIndex(Index([0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100], dtype=&#x27;int64&#x27;, name=&#x27;x&#x27;))</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-18fcea48-ee78-4c02-aa9c-8478f431a85f' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-18fcea48-ee78-4c02-aa9c-8478f431a85f' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
+  * x        (x) int64 0 10 20 30 40 50 60 70 80 90 100</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'foo'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>x</span>: 11</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-23929c72-ac7c-41d5-b226-67847231731c' class='xr-array-in' type='checkbox' checked><label for='section-23929c72-ac7c-41d5-b226-67847231731c' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>...</span></div><div class='xr-array-data'><pre>[11 values with dtype=float64]</pre></div></div></li><li class='xr-section-item'><input id='section-846c8bc9-7791-4aa1-af68-714d68364dd2' class='xr-section-summary-in' type='checkbox'  checked><label for='section-846c8bc9-7791-4aa1-af68-714d68364dd2' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>x</span></div><div class='xr-var-dims'>(x)</div><div class='xr-var-dtype'>int64</div><div class='xr-var-preview xr-preview'>0 10 20 30 40 50 60 70 80 90 100</div><input id='attrs-3524fa6e-e346-4e38-9c79-3cd702496691' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-3524fa6e-e346-4e38-9c79-3cd702496691' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-5cd6d303-25a8-4cee-8523-04e5bdf365c9' class='xr-var-data-in' type='checkbox'><label for='data-5cd6d303-25a8-4cee-8523-04e5bdf365c9' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([  0,  10,  20,  30,  40,  50,  60,  70,  80,  90, 100])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-e7857b20-99d2-46b4-84c1-bc1330b03fba' class='xr-section-summary-in' type='checkbox'  ><label for='section-e7857b20-99d2-46b4-84c1-bc1330b03fba' class='xr-section-summary' >Indexes: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-index-name'><div>x</div></div><div class='xr-index-preview'>PandasIndex</div><div></div><input id='index-f553c15d-b977-41c6-a45a-07a416b00f2a' class='xr-index-data-in' type='checkbox'/><label for='index-f553c15d-b977-41c6-a45a-07a416b00f2a' title='Show/Hide index repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-index-data'><pre>PandasIndex(Index([0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100], dtype=&#x27;int64&#x27;, name=&#x27;x&#x27;))</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-c80c721a-c349-456b-9b61-cc244c135a48' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-c80c721a-c349-456b-9b61-cc244c135a48' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 </section>
 </section>
@@ -1836,7 +1853,7 @@ By The Xarray Community
     
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>

@@ -14,12 +14,33 @@ Organized by:
 
 ## Instructions
 
+### Nebari
+
+For the live tutorial, we will be using the SciPy 2023 Nebari JupyterHub at [scipy.quansight.dev](https://scipy.quansight.dev/)
+
+You can follow [this participants' guide to register and sign-in to Nebari](https://docs.google.com/document/d/1vnWhNyUBRpILb2MAHQfTmZQY3pCIaCmroV9ke49nQlE/edit).
+
+**NOTE: When you're in `Server Options` page, select the `Medium Instance for xarray` for the machine instance for this tutorial.**
+
+Once you see the Jupyterlab interface spun up, do the following:
+
+- Open a Terminal
+
+- Clone the tutorial materials:
+
+```
+git clone https://github.com/xarray-contrib/xarray-tutorial.git
+```
+
+- Navigate to `xarray-tutorial/workshops/scipy2023/index.ipynb`
+
+- Select `global-global-xarray` environment for the notebooks when prompted.
+
+### Running Locally
+
 See instructions to set up the environment for running the tutorial material [here](get-started).
 
-For the live tutorial, we will be using the SciPy 2023 Nebari JupyterHub. Instructions for the live
-tutorial will be added soon.
-
-## Github Codespaces
+### Github Codespaces
 
 This tutorial is available to run within [Github Codespaces](https://github.com/features/codespaces) - "a development environment that's hosted in the cloud" - with the conda environment specification in the [`conda-lock.yml`](../../conda/conda-lock.yml) file.
 
@@ -41,4 +62,32 @@ Once your codespace is launched, the following happens:
 
 ## Outline
 
-**🏗️ Outline coming soon! Please check back later**
+```{dropdown} Introduction
+{doc}`../../overview/get-started`
+```
+
+```{dropdown} Indexing
+{doc}`../../fundamentals/02.1_indexing_Basic`
+
+{doc}`../../intermediate/indexing/advanced-indexing`
+
+{doc}`../../intermediate/indexing/boolean-masking-indexing`
+```
+
+```{dropdown} Computational Patterns
+{doc}`../../intermediate/01-high-level-computation-patterns`
+```
+
+```{dropdown} Wrapping other arrays: dask
+{doc}`../../intermediate/xarray_and_dask`
+```
+
+```{dropdown} Wrapping custom computation
+{doc}`../../advanced/apply_ufunc/simple_numpy_apply_ufunc`
+
+{doc}`../../advanced/apply_ufunc/core-dimensions`
+
+{doc}`../../advanced/apply_ufunc/complex-output-numpy`
+
+{doc}`Explore the remaining material <../../advanced/apply_ufunc/apply_ufunc>`
+```
